@@ -84,14 +84,14 @@ public class BaseClass {
 		javaClassUtility=new JavaClassUtility();
 		
 		String url=FileClassUtility.getDataFromPropertyFile("url");
-		//username=FileClassUtility.getDataFromPropertyFile("username");
-		username=System.getProperty("USERNAME");
+		username=FileClassUtility.getDataFromPropertyFile("username");
+	//	username=System.getProperty("USERNAME");
 		
-		//password=FileClassUtility.getDataFromPropertyFile("password");
-		password=System.getProperty("PASSWORD");
+		password=FileClassUtility.getDataFromPropertyFile("password");
+	//	password=System.getProperty("PASSWORD");
 		
-		//String browser=FileClassUtility.getDataFromPropertyFile("browser");
-		browser=System.getProperty("BROWSER");
+		String browser=FileClassUtility.getDataFromPropertyFile("browser");
+	//	browser=System.getProperty("BROWSER");
 		
 		String timeout=FileClassUtility.getDataFromPropertyFile("timeout");
 		
