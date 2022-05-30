@@ -28,6 +28,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class BaseClass {
 	
+	public String url;
 	public String username;
 	public String password;
 	public String browser;
@@ -83,15 +84,16 @@ public class BaseClass {
 		//craete instance for all generic utility
 		javaClassUtility=new JavaClassUtility();
 		
-		String url=FileClassUtility.getDataFromPropertyFile("url");
+	//	String url=FileClassUtility.getDataFromPropertyFile("url");
+		url=System.getProperty("URL");
 		username=FileClassUtility.getDataFromPropertyFile("username");
 	//	username=System.getProperty("USERNAME");
 		
 		password=FileClassUtility.getDataFromPropertyFile("password");
 	//	password=System.getProperty("PASSWORD");
 		
-		String browser=FileClassUtility.getDataFromPropertyFile("browser");
-	//	browser=System.getProperty("BROWSER");
+	//	String browser=FileClassUtility.getDataFromPropertyFile("browser");
+		browser=System.getProperty("BROWSER");
 		
 		String timeout=FileClassUtility.getDataFromPropertyFile("timeout");
 		
