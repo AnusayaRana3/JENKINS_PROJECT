@@ -79,7 +79,7 @@ public class BaseClass {
 	
 	//@Parameters(value="browser")
 	@BeforeClass(groups="baseclass")
-	public void beforeclass1Test()//(String browser)
+	public void beforeclass1Test() //(String browser)
 	{
 		//craete instance for all generic utility
 		javaClassUtility=new JavaClassUtility();

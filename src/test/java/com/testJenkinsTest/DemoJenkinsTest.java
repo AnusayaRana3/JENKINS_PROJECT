@@ -9,6 +9,7 @@ public class DemoJenkinsTest {
 	 public void practice1Test()
 	{
 		Reporter.log("TestNgPractice2Test-->Test1",true);
+		
 	}
 	
 	@Test
