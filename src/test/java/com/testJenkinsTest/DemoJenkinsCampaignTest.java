@@ -10,6 +10,8 @@ import com.vtiger.pomRepository.CreateNewCampaignPage;
 
 public class DemoJenkinsCampaignTest extends BaseClass{
 
+	
+	
 	String campaignname;
 	CampaignPage campaignPage;
 	CreateNewCampaignPage createCampaignPage;
