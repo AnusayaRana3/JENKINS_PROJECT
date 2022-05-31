@@ -84,16 +84,16 @@ public class BaseClass {
 		//craete instance for all generic utility
 		javaClassUtility=new JavaClassUtility();
 		
-	//	String url=FileClassUtility.getDataFromPropertyFile("url");
-		url=System.getProperty("URL");
+	String url=FileClassUtility.getDataFromPropertyFile("url");
+		//url=System.getProperty("URL");
 		username=FileClassUtility.getDataFromPropertyFile("username");
 	//	username=System.getProperty("USERNAME");
 		
 		password=FileClassUtility.getDataFromPropertyFile("password");
 	//	password=System.getProperty("PASSWORD");
 		
-	//	String browser=FileClassUtility.getDataFromPropertyFile("browser");
-		browser=System.getProperty("BROWSER");
+	 browser=FileClassUtility.getDataFromPropertyFile("browser");
+	//	browser=System.getProperty("BROWSER");
 		
 		String timeout=FileClassUtility.getDataFromPropertyFile("timeout");
 		
